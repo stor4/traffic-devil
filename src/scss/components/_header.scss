@@ -1,6 +1,6 @@
 .header {
   background-color: #fff;
-  height: 100px;
+  height: clamp(74px, 17vw, 100px);
 
   &__container {
     position: relative;
@@ -14,8 +14,8 @@
 
   &__logo {
     position: absolute;
-    left: 75px;
-    top: 27px;
+    top: clamp(17px, 3vw, 27px);
+    left: clamp(28px, 6vw, 75px);
 
     img {
       width: 79px;
@@ -37,9 +37,10 @@
   }
 
   &__burger {
+    display: none;
     position: absolute;
-    right: 37px;
-    top: 50px;
+    top: clamp(29px, 3vw, 27px);
+    right: clamp(42px, 6vw, 75px);
     cursor: pointer;
 
     &-menu {
@@ -69,8 +70,18 @@
 
 @include tablet {
   .header {
+
+
     &__nav {
       display: none;
+    }
+
+    &__logo {
+
+    }
+
+    &__burger {
+      display: block;
     }
   }
 }
