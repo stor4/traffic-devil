@@ -26,6 +26,16 @@ img {
 
 a {
   text-decoration: none;
+
+  &:visited {
+    color: initial;
+  }
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .site-container {
@@ -97,4 +107,19 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.d-input {
+  border-radius: 4px;
+  // width: 300px;
+  // height: 40px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 109%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #818181;
+  padding: 11px 12px;
+  border: none;
 }

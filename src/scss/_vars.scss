@@ -2,11 +2,29 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Open Sans", sans-serif;
+  // --third-family: "Arial", sans-serif;
+  --font3: "Montserrat", sans-serif;
+  --font4: "Ubuntu", sans-serif;
+  --font5: "Quicksand", sans-serif;
+
+  --content-width: 1200px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --light-color: #fff;
+  --primary: #d81e05;
+  --secondary: #0e69af;
+
+  --text: #242424;
+
+}
+
+.iti {
+  --iti-path-flags-1x: url('../img/flags.webp');
+  --iti-path-flags-2x: url('../img/flags@2x.webp');
+  --iti-path-globe-1x: url('../img/globe.webp');
+  --iti-path-globe-2x: url('../img/globe@2x.webp');
 }

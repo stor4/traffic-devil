@@ -1,1 +1,77 @@
-// ваш код
+.header {
+  background-color: #fff;
+  height: 100px;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #fff;
+    z-index: 60;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 75px;
+    top: 27px;
+
+    img {
+      width: 79px;
+      height: 66px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    padding-top: 22px;
+
+    ul {
+      display: flex;
+      gap: 28px;
+    }
+  }
+
+  &__burger {
+    position: absolute;
+    right: 37px;
+    top: 50px;
+    cursor: pointer;
+
+    &-menu {
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      top: -100px;
+      z-index: 50;
+      transition: all 0.3s ease-in-out;
+      // transform: translateY(100px);
+      padding-bottom: 30px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+
+      }
+    }
+  }
+}
+
+.open-menu {
+  transform: translateY(200px);
+}
+
+@include tablet {
+  .header {
+    &__nav {
+      display: none;
+    }
+  }
+}
+

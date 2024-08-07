@@ -1,16 +1,14 @@
 // базовые подключения
+@import 'intl-tel-input/build/css/intlTelInput.css';
 @import "vars";
 @import "mixins";
 @import "fonts";
 @import "settings";
+@import "../../node_modules/intl-tel-input/build/css/intlTelInput.css";
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/hero";
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+
+

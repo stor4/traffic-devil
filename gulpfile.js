@@ -16,12 +16,15 @@ import { cacheTask } from './gulp/tasks/cache.js';
 import { rewrite } from './gulp/tasks/rewrite.js';
 import { htmlMinify } from './gulp/tasks/html-minify.js';
 import { zipFiles } from './gulp/tasks/zip.js';
+import { copyIntlImages } from './gulp/tasks/copy-intl-images.js';
 
 global.app = {
   gulp,
   isProd: process.argv.includes('--build'),
   paths,
 }
+
+
 
 const watcher = () => {
   browserSync.init({
@@ -42,9 +45,9 @@ const watcher = () => {
   gulp.watch(app.paths.srcSvg, svgSprites);
 }
 
-const dev = gulp.series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, watcher);
+const dev = gulp.series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, copyIntlImages, watcher);
 const backend = gulp.series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages, svgSprites);
-const build = gulp.series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, htmlMinify);
+const build = gulp.series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, copyIntlImages, htmlMinify);
 const cache = gulp.series(cacheTask, rewrite);
 const zip = zipFiles;
 
