@@ -5,11 +5,13 @@
 @import "fonts";
 @import "settings";
 @import "../../node_modules/intl-tel-input/build/css/intlTelInput.css";
+@import "../../node_modules/ion-rangeslider/css/ion.rangeSlider";
 
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/hero";
 @import "./components/cards";
+@import "./components/potencial";
 
 
 
