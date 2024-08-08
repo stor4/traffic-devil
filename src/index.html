@@ -1,18 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru" class="page">
+  @include('partials/head.html')
 
-@include('partials/head.html')
-
-<body class="page__body">
+  <body class="page__body">
     @include('partials/header.html')
     <main class="main">
-      @include('partials/hero.html')
-      @include('partials/cards.html')
-      @include('partials/potencial.html')
-      @include('partials/slider.html')
+      @include('partials/hero.html') @include('partials/cards.html')
+      @include('partials/potencial.html') @include('partials/slider.html')
       @include('partials/stocks.html')
     </main>
     @include('partials/footer.html')
-</body>
-
+  </body>
 </html>

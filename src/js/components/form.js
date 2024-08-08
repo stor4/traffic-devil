@@ -1,15 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const submitBtn = document.getElementById('submitBtn');
-  const inputs = document.querySelectorAll('.hero__form .d-input');
+document.addEventListener("DOMContentLoaded", function () {
+  const submitBtn = document.getElementById("submitBtn");
+  const inputs = document.querySelectorAll(".hero__form .d-input");
 
   function checkFormValidity() {
     let allFilled = true;
-    inputs.forEach(input => {
+    inputs.forEach((input) => {
       if (!input.value.trim()) {
         allFilled = false;
-        input.classList.add('input-error');
+        input.classList.add("input-error");
       } else {
-        input.classList.remove('input-error');
+        input.classList.remove("input-error");
       }
     });
     submitBtn.disabled = !allFilled;
@@ -20,20 +20,19 @@ document.addEventListener('DOMContentLoaded', function() {
     return re.test(String(email).toLowerCase());
   }
 
-  inputs.forEach(input => {
-    input.addEventListener('input', () => {
+  inputs.forEach((input) => {
+    input.addEventListener("input", () => {
       checkFormValidity();
 
-      if (input.id === 'email' && !validateEmail(input.value)) {
-        input.classList.add('input-error');
-        input.setCustomValidity('Inserisci un indirizzo email valido');
+      if (input.id === "email" && !validateEmail(input.value)) {
+        input.classList.add("input-error");
+        input.setCustomValidity("Inserisci un indirizzo email valido");
       } else {
-        input.classList.remove('input-error');
-        input.setCustomValidity('');
+        input.classList.remove("input-error");
+        input.setCustomValidity("");
       }
     });
   });
 
   checkFormValidity();
 });
-

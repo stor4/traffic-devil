@@ -1,31 +1,55 @@
 <div class="hero">
   <div class="container hero__container">
     <div class="hero__top">
-      <h1 class="hero__title">Investire 250 euro per raggiungere 5000 euro in una settimana vi sembra impossibile?
-        Con il Gruppo Generali potete fare ancora di più!
+      <h1 class="hero__title">
+        Investire 250 euro per raggiungere 5000 euro in una settimana vi sembra
+        impossibile? Con il Gruppo Generali potete fare ancora di più!
       </h1>
       <div class="hero__img-mob"></div>
       <div class="hero__form-container">
-        <img src="../img/hero_bg.svg" alt="hero-bg" class="hero__bg">
+        <img src="../img/hero_bg.svg" alt="hero-bg" class="hero__bg" />
         <div class="hero__form">
-          <input class="d-input" placeholder="il suo nome" type="text" id="name">
-          <input class="d-input" placeholder="il suo cog" type="text" id="surname">
-          <input class="d-input" placeholder="e-mail" type="email" id="email">
-          <input class="d-input" id="phone" maxlength="10" type="tel" placeholder="Phone">
-          <button class="hero__form-submit d-btn" id="submitBtn" disabled>Registrati</button>
+          <input
+            class="d-input"
+            pattern="[A-Za-zА-Яа-яЁё\s]+"
+            placeholder="il suo nome"
+            type="text"
+            id="name"
+            required
+          />
+          <input
+            class="d-input"
+            pattern="[A-Za-zА-Яа-яЁё\s]+"
+            placeholder="il suo cog"
+            type="text"
+            id="surname"
+            required
+          />
+          <input class="d-input" placeholder="e-mail" type="email" id="email" />
+          <input
+            class="d-input"
+            id="phone"
+            maxlength="10"
+            type="tel"
+            placeholder="Phone"
+          />
+          <button class="hero__form-submit d-btn" id="submitBtn" disabled>
+            Registrati
+          </button>
         </div>
       </div>
-
     </div>
     <div class="hero__bottom">
       <div class="hero__bottom-img">
-        <img src="../img/hero_bottom.svg" alt="img">
+        <img src="../img/hero_bottom.svg" alt="img" />
       </div>
       <div class="hero__bottom-text">
         <p class="hero__bottom-subtitle">IL NOSTRO SCOPO</p>
-        <p>Siamo qui per promuovere lo sviluppo e la circolazione delle persone, delle imprese e del Paese.</p>
+        <p>
+          Siamo qui per promuovere lo sviluppo e la circolazione delle persone,
+          delle imprese e del Paese.
+        </p>
       </div>
-
     </div>
   </div>
 </div>

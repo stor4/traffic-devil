@@ -33,10 +33,13 @@ a {
   }
 }
 
-ul, li, p, span {
+ul,
+li,
+p,
+span {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 .site-container {
@@ -111,7 +114,10 @@ ul, li, p, span {
 }
 
 .d-input {
+  border: none;
   border-radius: 4px;
+  padding: 11px 12px;
+
   // width: 300px;
   // height: 40px;
   font-family: var(--second-family);
@@ -121,40 +127,39 @@ ul, li, p, span {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #818181;
-  padding: 11px 12px;
-  border: none;
 }
 
 .input-error {
-  border: 1px solid red;
+  border: 1px solid #f00;
 }
 
 .d-btn {
+  margin-top: 41.2px;
+  border: 1px solid var(--primary);
   border-radius: 4px;
+  padding: 13px;
   width: 100%;
-  // height: 45px;
-  background: var(--primary);
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 109%;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   color: #fff;
-  padding: 13px;
-  border: 1px solid var(--primary);
-  transition: all 0.3s ease-in-out;
-  margin-top: 41.2px;
 
-  &:hover{
-    background: transparent;
+  // height: 45px;
+  background: var(--primary);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
     color: var(--primary);
+    background: transparent;
   }
 
   &:disabled {
-    background: gray;
-    border-color: gray;
+    border-color: #808080;
+    background: #808080;
     cursor: default;
 
     &:hover {
@@ -163,73 +168,69 @@ ul, li, p, span {
   }
 }
 
-.irs-grid {
-  bottom: 10px !important;
-}
+// .irs-grid {
+//   bottom: 10px !important;
+// }
 
-.irs-line, .irs-bar {
-  height: 4px !important;
-}
+// .irs-line, .irs-bar {
+//   height: 4px !important;
+// }
 
-.irs-max,
-.irs-min {
-  font-family: var(--third-family) !important;
-  font-weight: 400;
-  font-size: 14px !important;
-  line-height: 100%;
-  color: #333 !important;
-}
+// .irs-max,
+// .irs-min {
+//   font-family: var(--third-family) !important;
+//   font-weight: 400;
+//   font-size: 14px !important;
+//   line-height: 100%;
+//   color: #333 !important;
+// }
 
-.irs-bar {
-  background-color: var(--primary) !important;
-}
+// .irs-bar {
+//   background-color: var(--primary) !important;
+// }
 
-.irs-single {
-  background: var(--primary) !important;
-  font-size: 14px !important;
-  top: -10px !important;
-  transform: translateX(1px);
-  position: relative;
+// .irs-single {
+//   position: relative;
+//   top: -10px !important;
+//   font-size: 14px !important;
+//   background: var(--primary) !important;
+//   transform: translateX(1px);
 
-  &::before {
-    width: 5px !important;
-    border-width: 3px !important;
-    border-color: var(--primary) !important;
-    bottom: -5px !important;
-  }
-}
+//   &::before {
+//     bottom: -5px !important;
+//     border-width: 3px !important;
+//     border-color: var(--primary) !important;
+//     width: 5px !important;
+//   }
+// }
 
-.irs-handle {
-  border: 4px solid var(--primary);
-  border-radius: 24px;
-  width: 24px !important;
-  height: 24px !important;
-  background-color: #fff !important;
-  background: #fff;
-  z-index: 2 !important;
-  top: 15px !important;
+// .irs-handle {
+//   top: 15px !important;
+//   z-index: 2 !important;
+//   border: 4px solid var(--primary);
+//   border-radius: 24px;
+//   width: 24px !important;
+//   height: 24px !important;
+//   background: #fff;
+//   background-color: #fff !important;
 
-  &::after {
-    content: '';
-    position: absolute;
-    // top: 0.5px;
-    // left: -0.5px;
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    background-color: #fff !important;
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     border-radius: 50%;
+//     width: 16px;
+//     height: 16px;
+//     background-color: #fff !important;
+//   }
+// }
 
-  }
-}
-
-.irs-grid-text {
-  font-size: 13px !important;
-  transform: translate(-1px, 5px);
-}
+// .irs-grid-text {
+//   font-size: 13px !important;
+//   transform: translate(-1px, 5px);
+// }
 
 .slider {
   width: 100%;
-  // height: 100vh;
 }
 
 .slider__container {
@@ -244,14 +245,14 @@ ul, li, p, span {
 
 .swiper-slide {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
 
 .slider__slide {
+  margin: 0 auto;
   width: 100%;
   max-width: 1170px;
-  margin: 0 auto;
 }

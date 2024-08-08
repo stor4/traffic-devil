@@ -1,21 +1,21 @@
 .header {
-  background-color: #fff;
   height: clamp(74px, 17vw, 100px);
+  background-color: #fff;
 
   &__container {
     position: relative;
+    z-index: 60;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     background-color: #fff;
-    z-index: 60;
   }
 
   &__logo {
     position: absolute;
-    top: clamp(17px, 3vw, 27px);
     left: clamp(28px, 6vw, 75px);
+    top: clamp(17px, 3vw, 27px);
 
     img {
       width: 79px;
@@ -31,10 +31,10 @@
 
   &__nav {
     display: flex;
+    padding-top: 22px;
     font-weight: 400;
     font-size: 20px;
     line-height: 180%;
-    padding-top: 22px;
 
     ul {
       display: flex;
@@ -43,28 +43,26 @@
   }
 
   &__burger {
-    display: none;
     position: absolute;
-    top: clamp(29px, 3vw, 27px);
     right: clamp(42px, 6vw, 75px);
+    top: clamp(29px, 3vw, 27px);
+    display: none;
     cursor: pointer;
 
     &-menu {
-      background-color: #fff;
       position: absolute;
-      width: 100%;
       top: -100px;
       z-index: 50;
-      transition: all 0.3s ease-in-out;
-      // transform: translateY(100px);
       padding-bottom: 30px;
+      width: 100%;
+      background-color: #fff;
+      transition: all 0.3s ease-in-out;
 
       ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 15px;
-
       }
     }
   }
@@ -76,14 +74,8 @@
 
 @include tablet {
   .header {
-
-
     &__nav {
       display: none;
-    }
-
-    &__logo {
-
     }
 
     &__burger {
@@ -91,4 +83,3 @@
     }
   }
 }
-

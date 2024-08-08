@@ -1,5 +1,4 @@
 .stocks {
-
   &__container {
     padding: clamp(29px, 7vw, 72px) 0 39px;
   }
@@ -31,24 +30,24 @@
           user-select: none;
 
           &:nth-child(1) {
+            width: 100%;
+            height: 100%;
             max-width: 214px;
             max-height: 55px;
-            height: 100%;
-            width: 100%;
           }
 
           &:nth-child(2) {
+            width: 100%;
+            height: 100%;
             max-width: 170px;
             max-height: 34px;
-            height: 100%;
-            width: 100%;
           }
 
           &:nth-child(3) {
+            width: 100%;
+            height: 100%;
             max-width: 200px;
             max-height: 47px;
-            height: 100%;
-            width: 100%;
           }
         }
       }
@@ -58,24 +57,24 @@
           user-select: none;
 
           &:nth-child(1) {
+            width: 100%;
+            height: 100%;
             max-width: 103px;
             max-height: 72px;
-            height: 100%;
-            width: 100%;
           }
 
           &:nth-child(2) {
+            width: 100%;
+            height: 100%;
             max-width: 209px;
             max-height: 32px;
-            height: 100%;
-            width: 100%;
           }
 
           &:nth-child(3) {
+            width: 100%;
+            height: 100%;
             max-width: 80px;
             max-height: 65px;
-            height: 100%;
-            width: 100%;
           }
         }
       }
@@ -94,24 +93,24 @@
         &:nth-child(1) {
           img {
             &:nth-child(1) {
+              width: 100%;
+              height: 100%;
               max-width: clamp(126px, 18vw, 214px);
               max-height: clamp(32px, 18vw, 55px);
-              height: 100%;
-              width: 100%;
             }
 
             &:nth-child(2) {
+              width: 100%;
+              height: 100%;
               max-width: clamp(100px, 15vw, 170px);
               max-height: clamp(20px, 15vw, 34px);
-              height: 100%;
-              width: 100%;
             }
 
             &:nth-child(3) {
+              width: 100%;
+              height: 100%;
               max-width: clamp(118px, 17vw, 200px);
               max-height: clamp(27px, 17vw, 47px);
-              height: 100%;
-              width: 100%;
             }
           }
         }
@@ -119,29 +118,28 @@
         &:nth-child(2) {
           img {
             &:nth-child(1) {
+              width: 100%;
+              height: 100%;
               max-width: clamp(61px, 15vw, 103px);
               max-height: clamp(42px, 15vw, 72px);
-              height: 100%;
-              width: 100%;
             }
 
             &:nth-child(2) {
+              width: 100%;
+              height: 100%;
               max-width: clamp(123px, 15vw, 209px);
               max-height: clamp(18px, 15vw, 32px);
-              height: 100%;
-              width: 100%;
             }
 
             &:nth-child(3) {
+              width: 100%;
+              height: 100%;
               max-width: clamp(47px, 10vw, 80px);
               max-height: clamp(38px, 10vw, 65px);
-              height: 100%;
-              width: 100%;
             }
           }
         }
       }
-
     }
   }
 }

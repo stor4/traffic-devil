@@ -1,5 +1,4 @@
 .cards {
-
   &__container {
     padding-top: 87.5px;
   }
@@ -18,31 +17,12 @@
   }
 
   &__item {
-    max-width: 380px;
-    min-height: 370px;
-    padding: 0 15px 0 0;
     position: relative;
     display: flex;
     flex-direction: column;
-
-    &:nth-child(2),
-    &:nth-child(3) {
-      &::after {
-        content: '';
-        height: 100%;
-        width: 1px;
-        background: var(--primary);
-        position: absolute;
-        left: 5px;
-        top: -10px;
-      }
-    }
-
-    &:nth-child(3) {
-      &::after {
-        left: 11px;
-      }
-    }
+    padding: 0 15px 0 0;
+    min-height: 370px;
+    max-width: 380px;
 
     &:nth-child(2) {
       padding-left: 35px;
@@ -54,24 +34,40 @@
       .cards__item-btn {
         margin-top: 35px;
       }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: -10px;
+        width: 1px;
+        height: 100%;
+        background: var(--primary);
+      }
     }
 
     &:nth-child(3) {
-      padding-left: 27px;
       padding-right: 0;
+      padding-left: 27px;
 
-      .cards__item-btn {
-
+      &::after {
+        content: "";
+        position: absolute;
+        left: 11px;
+        top: -10px;
+        width: 1px;
+        height: 100%;
+        background: var(--primary);
       }
     }
   }
 
   &__item-img {
-    max-width: 95px;
-    max-height: 95px;
+    margin-bottom: 53px;
     width: 100%;
     height: 100%;
-    margin-bottom: 53px;
+    max-width: 95px;
+    max-height: 95px;
 
     :nth-child(2) {
       margin-bottom: 40px;
@@ -79,30 +75,29 @@
   }
 
   &__item-title {
+    margin-bottom: 34.5px;
+    max-width: 341px;
     font-size: 31px;
     line-height: 119%;
     color: #000;
-    margin-bottom: 34.5px;
-    max-width: 341px;
     text-wrap: nowrap;
   }
 
   &__item-desc {
+    margin-bottom: 0;
     font-size: 16px;
     line-height: clamp(112%, 4vw, 140%);
     color: var(--text);
-    margin-bottom: 0px;
-    // max-width: 294px;
   }
 
   &__item-btn {
-    border-radius: 15px;
-    box-shadow: 3px 4px 10px 0 rgba(0, 0, 0, 0.25);
     position: relative;
     bottom: 0;
-    padding: 17px;
-    font-size: 16px;
     margin-top: 36px;
+    border-radius: 15px;
+    padding: 17px;
+    box-shadow: 3px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    font-size: 16px;
   }
 }
 
@@ -122,10 +117,10 @@
 
     &__item {
       align-items: center;
-      text-align: center;
       padding: 0;
-      min-height: none;
       width: 100%;
+      min-height: none;
+      text-align: center;
 
       &-img {
         margin-bottom: 53px;
@@ -133,7 +128,7 @@
 
       &-desc {
         font-size: 20px;
-        line-height: 112%
+        line-height: 112%;
       }
 
       &-btn {
@@ -166,8 +161,8 @@
       }
 
       &:nth-child(3) {
-        padding-left: 0;
         padding-top: 20px;
+        padding-left: 0;
 
         .cards__item-img {
           margin-bottom: 50px;
