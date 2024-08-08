@@ -1,0 +1,147 @@
+.stocks {
+
+  &__container {
+    padding: clamp(29px, 7vw, 72px) 0 39px;
+  }
+
+  &__title {
+    font-family: var(--font4);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 137%;
+    text-align: center;
+    color: #171717;
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: clamp(40px, 4vw, 59px);
+    gap: 30px;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 38px;
+
+      &:nth-child(1) {
+        img {
+          user-select: none;
+
+          &:nth-child(1) {
+            max-width: 214px;
+            max-height: 55px;
+            height: 100%;
+            width: 100%;
+          }
+
+          &:nth-child(2) {
+            max-width: 170px;
+            max-height: 34px;
+            height: 100%;
+            width: 100%;
+          }
+
+          &:nth-child(3) {
+            max-width: 200px;
+            max-height: 47px;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          user-select: none;
+
+          &:nth-child(1) {
+            max-width: 103px;
+            max-height: 72px;
+            height: 100%;
+            width: 100%;
+          }
+
+          &:nth-child(2) {
+            max-width: 209px;
+            max-height: 32px;
+            height: 100%;
+            width: 100%;
+          }
+
+          &:nth-child(3) {
+            max-width: 80px;
+            max-height: 65px;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .stocks {
+    &__grid {
+      gap: 18px;
+
+      div {
+        gap: 22px;
+
+        &:nth-child(1) {
+          img {
+            &:nth-child(1) {
+              max-width: clamp(126px, 18vw, 214px);
+              max-height: clamp(32px, 18vw, 55px);
+              height: 100%;
+              width: 100%;
+            }
+
+            &:nth-child(2) {
+              max-width: clamp(100px, 15vw, 170px);
+              max-height: clamp(20px, 15vw, 34px);
+              height: 100%;
+              width: 100%;
+            }
+
+            &:nth-child(3) {
+              max-width: clamp(118px, 17vw, 200px);
+              max-height: clamp(27px, 17vw, 47px);
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          img {
+            &:nth-child(1) {
+              max-width: clamp(61px, 15vw, 103px);
+              max-height: clamp(42px, 15vw, 72px);
+              height: 100%;
+              width: 100%;
+            }
+
+            &:nth-child(2) {
+              max-width: clamp(123px, 15vw, 209px);
+              max-height: clamp(18px, 15vw, 32px);
+              height: 100%;
+              width: 100%;
+            }
+
+            &:nth-child(3) {
+              max-width: clamp(47px, 10vw, 80px);
+              max-height: clamp(38px, 10vw, 65px);
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

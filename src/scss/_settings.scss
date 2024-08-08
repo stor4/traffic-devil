@@ -125,6 +125,10 @@ ul, li, p, span {
   border: none;
 }
 
+.input-error {
+  border: 1px solid red;
+}
+
 .d-btn {
   border-radius: 4px;
   width: 100%;
@@ -146,6 +150,16 @@ ul, li, p, span {
   &:hover{
     background: transparent;
     color: var(--primary);
+  }
+
+  &:disabled {
+    background: gray;
+    border-color: gray;
+    cursor: default;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -211,4 +225,33 @@ ul, li, p, span {
 .irs-grid-text {
   font-size: 13px !important;
   transform: translate(-1px, 5px);
+}
+
+.slider {
+  width: 100%;
+  // height: 100vh;
+}
+
+.slider__container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__slide {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
