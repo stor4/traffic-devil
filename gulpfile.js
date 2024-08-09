@@ -46,13 +46,13 @@ const watcher = () => {
 const dev = gulp.series(
   clean,
   htmlInclude,
+  copyIntlImages,
   scripts,
   styles,
   resources,
   images,
   webpImages,
   svgSprites,
-  copyIntlImages,
   watcher,
 );
 const backend = gulp.series(
@@ -67,6 +67,7 @@ const backend = gulp.series(
 );
 const build = gulp.series(
   clean,
+  copyIntlImages,
   htmlInclude,
   scripts,
   styles,
@@ -74,7 +75,6 @@ const build = gulp.series(
   images,
   webpImages,
   svgSprites,
-  copyIntlImages,
   htmlMinify,
 );
 const cache = gulp.series(cacheTask, rewrite);
